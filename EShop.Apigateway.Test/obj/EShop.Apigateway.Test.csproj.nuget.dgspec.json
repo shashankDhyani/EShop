@@ -282,6 +282,10 @@
             "Polly": {
               "target": "Package",
               "version": "[7.2.2, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.2.88, )"
             }
           },
           "imports": [

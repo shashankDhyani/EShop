@@ -14,7 +14,7 @@ namespace EShop.Infrastructure.EventBus
             var rabbitMq = new RabbitMqOption();
             configuration.GetSection("rabbitmq").Bind(rabbitMq);
 
-            // establish connection with rabbitMQ...
+            // establish connection with rabbitMQ..
             services.AddMassTransit(x => {
                 x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(cfg =>
                 {
@@ -27,6 +27,7 @@ namespace EShop.Infrastructure.EventBus
                 x.AddRequestClient<GetProductById>();
                 x.AddRequestClient<LoginUser>();
             });
+
             services.AddMassTransitHostedService();
 
             return services;

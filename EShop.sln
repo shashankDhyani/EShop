@@ -23,7 +23,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EShop.User.Query.Api", "ESh
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EShop.Apigateway.Test", "EShop.Apigateway.Test\EShop.Apigateway.Test.csproj", "{B7CF14CE-A95F-46A7-973A-8CBDB3494F6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EShop.User.Query.Api.Test", "EShop.User.Query.Api.Test\EShop.User.Query.Api.Test.csproj", "{A78804B9-DD08-438A-926D-2E29E443B831}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EShop.User.Query.Api.Test", "EShop.User.Query.Api.Test\EShop.User.Query.Api.Test.csproj", "{A78804B9-DD08-438A-926D-2E29E443B831}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EShop.Cart.Api", "EShop.Cart.Api\EShop.Cart.Api.csproj", "{44AC5098-0706-47E7-BDC2-47AB5F9CAFF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EShop.Cart.DataProvider", "EShop.Cart.DataProvider\EShop.Cart.DataProvider.csproj", "{FEECD9C0-DA44-4C2C-A947-D6F0EFEE0EA6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +79,14 @@ Global
 		{A78804B9-DD08-438A-926D-2E29E443B831}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A78804B9-DD08-438A-926D-2E29E443B831}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A78804B9-DD08-438A-926D-2E29E443B831}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44AC5098-0706-47E7-BDC2-47AB5F9CAFF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44AC5098-0706-47E7-BDC2-47AB5F9CAFF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44AC5098-0706-47E7-BDC2-47AB5F9CAFF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44AC5098-0706-47E7-BDC2-47AB5F9CAFF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEECD9C0-DA44-4C2C-A947-D6F0EFEE0EA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEECD9C0-DA44-4C2C-A947-D6F0EFEE0EA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEECD9C0-DA44-4C2C-A947-D6F0EFEE0EA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEECD9C0-DA44-4C2C-A947-D6F0EFEE0EA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

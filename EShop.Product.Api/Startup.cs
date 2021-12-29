@@ -65,15 +65,12 @@ namespace EShop.Product.Api
 
             app.UseAuthorization();
             
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
             var busControl = app.ApplicationServices.GetService<IBusControl>();
             busControl.Start();
-
-            
 
             var dbInitializer = app.ApplicationServices.GetService<IDatabaseInitializer>();
             dbInitializer.InitializeAsync();
