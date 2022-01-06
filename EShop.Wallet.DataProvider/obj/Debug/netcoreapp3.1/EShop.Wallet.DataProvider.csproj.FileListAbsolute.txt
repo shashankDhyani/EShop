@@ -1,0 +1,12 @@
+C:\Users\shashank\source\repos\EShop\EShop.Wallet.DataProvider\bin\Debug\netcoreapp3.1\EShop.Wallet.DataProvider.deps.json
+C:\Users\shashank\source\repos\EShop\EShop.Wallet.DataProvider\bin\Debug\netcoreapp3.1\EShop.Wallet.DataProvider.dll
+C:\Users\shashank\source\repos\EShop\EShop.Wallet.DataProvider\bin\Debug\netcoreapp3.1\EShop.Wallet.DataProvider.pdb
+C:\Users\shashank\source\repos\EShop\EShop.Wallet.DataProvider\bin\Debug\netcoreapp3.1\EShop.Infrastructure.dll
+C:\Users\shashank\source\repos\EShop\EShop.Wallet.DataProvider\bin\Debug\netcoreapp3.1\EShop.Infrastructure.pdb
+C:\Users\shashank\source\repos\EShop\EShop.Wallet.DataProvider\obj\Debug\netcoreapp3.1\EShop.Wallet.DataProvider.csprojAssemblyReference.cache
+C:\Users\shashank\source\repos\EShop\EShop.Wallet.DataProvider\obj\Debug\netcoreapp3.1\EShop.Wallet.DataProvider.AssemblyInfoInputs.cache
+C:\Users\shashank\source\repos\EShop\EShop.Wallet.DataProvider\obj\Debug\netcoreapp3.1\EShop.Wallet.DataProvider.AssemblyInfo.cs
+C:\Users\shashank\source\repos\EShop\EShop.Wallet.DataProvider\obj\Debug\netcoreapp3.1\EShop.Wallet.DataProvider.csproj.CoreCompileInputs.cache
+C:\Users\shashank\source\repos\EShop\EShop.Wallet.DataProvider\obj\Debug\netcoreapp3.1\EShop.Wallet.DataProvider.csproj.CopyComplete
+C:\Users\shashank\source\repos\EShop\EShop.Wallet.DataProvider\obj\Debug\netcoreapp3.1\EShop.Wallet.DataProvider.dll
+C:\Users\shashank\source\repos\EShop\EShop.Wallet.DataProvider\obj\Debug\netcoreapp3.1\EShop.Wallet.DataProvider.pdb

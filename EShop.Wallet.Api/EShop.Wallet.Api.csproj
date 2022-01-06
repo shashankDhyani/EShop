@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MassTransit" Version="6.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EShop.Infrastructure\EShop.Infrastructure.csproj" />
+    <ProjectReference Include="..\EShop.Wallet.DataProvider\EShop.Wallet.DataProvider.csproj" />
+  </ItemGroup>
+
+
+</Project>

@@ -1,0 +1,14 @@
+C:\Users\shashank\source\repos\EShop\EShop.Order.DataProvider\bin\Debug\netcoreapp3.1\EShop.Order.DataProvider.deps.json
+C:\Users\shashank\source\repos\EShop\EShop.Order.DataProvider\bin\Debug\netcoreapp3.1\EShop.Order.DataProvider.dll
+C:\Users\shashank\source\repos\EShop\EShop.Order.DataProvider\bin\Debug\netcoreapp3.1\EShop.Order.DataProvider.pdb
+C:\Users\shashank\source\repos\EShop\EShop.Order.DataProvider\bin\Debug\netcoreapp3.1\EShop.Infrastructure.dll
+C:\Users\shashank\source\repos\EShop\EShop.Order.DataProvider\bin\Debug\netcoreapp3.1\EShop.Product.DataProvider.dll
+C:\Users\shashank\source\repos\EShop\EShop.Order.DataProvider\bin\Debug\netcoreapp3.1\EShop.Infrastructure.pdb
+C:\Users\shashank\source\repos\EShop\EShop.Order.DataProvider\bin\Debug\netcoreapp3.1\EShop.Product.DataProvider.pdb
+C:\Users\shashank\source\repos\EShop\EShop.Order.DataProvider\obj\Debug\netcoreapp3.1\EShop.Order.DataProvider.csprojAssemblyReference.cache
+C:\Users\shashank\source\repos\EShop\EShop.Order.DataProvider\obj\Debug\netcoreapp3.1\EShop.Order.DataProvider.AssemblyInfoInputs.cache
+C:\Users\shashank\source\repos\EShop\EShop.Order.DataProvider\obj\Debug\netcoreapp3.1\EShop.Order.DataProvider.AssemblyInfo.cs
+C:\Users\shashank\source\repos\EShop\EShop.Order.DataProvider\obj\Debug\netcoreapp3.1\EShop.Order.DataProvider.csproj.CoreCompileInputs.cache
+C:\Users\shashank\source\repos\EShop\EShop.Order.DataProvider\obj\Debug\netcoreapp3.1\EShop.Order.DataProvider.csproj.CopyComplete
+C:\Users\shashank\source\repos\EShop\EShop.Order.DataProvider\obj\Debug\netcoreapp3.1\EShop.Order.DataProvider.dll
+C:\Users\shashank\source\repos\EShop\EShop.Order.DataProvider\obj\Debug\netcoreapp3.1\EShop.Order.DataProvider.pdb

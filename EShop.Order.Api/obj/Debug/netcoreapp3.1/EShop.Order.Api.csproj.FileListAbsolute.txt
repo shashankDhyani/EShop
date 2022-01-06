@@ -49,8 +49,6 @@ C:\Users\shashank\source\repos\EShop\EShop.Order.Api\obj\Debug\netcoreapp3.1\ESh
 C:\Users\shashank\source\repos\EShop\EShop.Order.Api\obj\Debug\netcoreapp3.1\EShop.Order.Api.pdb
 C:\Users\shashank\source\repos\EShop\EShop.Order.Api\obj\Debug\netcoreapp3.1\EShop.Order.Api.genruntimeconfig.cache
 C:\Users\shashank\source\repos\EShop\EShop.Order.Api\bin\Debug\netcoreapp3.1\Polly.dll
-C:\Users\shashank\source\repos\EShop\EShop.Order.Api\obj\Debug\netcoreapp3.1\EShop.Order.Api.csproj.CoreCompileInputs.cache
-C:\Users\shashank\source\repos\EShop\EShop.Order.Api\obj\Debug\netcoreapp3.1\EShop.Order.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\shashank\source\repos\EShop\EShop.Order.Api\bin\Debug\netcoreapp3.1\Microsoft.Win32.Registry.dll
 C:\Users\shashank\source\repos\EShop\EShop.Order.Api\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
 C:\Users\shashank\source\repos\EShop\EShop.Order.Api\bin\Debug\netcoreapp3.1\Pipelines.Sockets.Unofficial.dll
@@ -74,3 +72,14 @@ C:\Users\shashank\source\repos\EShop\EShop.Order.Api\bin\Debug\netcoreapp3.1\run
 C:\Users\shashank\source\repos\EShop\EShop.Order.Api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\Users\shashank\source\repos\EShop\EShop.Order.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\Users\shashank\source\repos\EShop\EShop.Order.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\shashank\source\repos\EShop\EShop.Order.Api\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\shashank\source\repos\EShop\EShop.Order.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\shashank\source\repos\EShop\EShop.Order.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\shashank\source\repos\EShop\EShop.Order.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\shashank\source\repos\EShop\EShop.Order.Api\obj\Debug\netcoreapp3.1\EShop.Order.Api.csproj.CoreCompileInputs.cache
+C:\Users\shashank\source\repos\EShop\EShop.Order.Api\obj\Debug\netcoreapp3.1\EShop.Order.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\shashank\source\repos\EShop\EShop.Order.Api\obj\Debug\netcoreapp3.1\EShop.Order.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\shashank\source\repos\EShop\EShop.Order.Api\bin\Debug\netcoreapp3.1\EShop.Order.DataProvider.dll
+C:\Users\shashank\source\repos\EShop\EShop.Order.Api\bin\Debug\netcoreapp3.1\EShop.Product.DataProvider.dll
+C:\Users\shashank\source\repos\EShop\EShop.Order.Api\bin\Debug\netcoreapp3.1\EShop.Order.DataProvider.pdb
+C:\Users\shashank\source\repos\EShop\EShop.Order.Api\bin\Debug\netcoreapp3.1\EShop.Product.DataProvider.pdb
