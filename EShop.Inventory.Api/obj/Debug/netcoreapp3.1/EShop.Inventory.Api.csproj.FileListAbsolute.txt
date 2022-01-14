@@ -74,3 +74,5 @@ C:\Users\shashank\source\repos\EShop\EShop.Inventory.Api\obj\Debug\netcoreapp3.1
 C:\Users\shashank\source\repos\EShop\EShop.Inventory.Api\obj\Debug\netcoreapp3.1\EShop.Inventory.Api.dll
 C:\Users\shashank\source\repos\EShop\EShop.Inventory.Api\obj\Debug\netcoreapp3.1\EShop.Inventory.Api.pdb
 C:\Users\shashank\source\repos\EShop\EShop.Inventory.Api\obj\Debug\netcoreapp3.1\EShop.Inventory.Api.genruntimeconfig.cache
+C:\Users\shashank\source\repos\EShop\EShop.Inventory.Api\bin\Debug\netcoreapp3.1\EShop.Inventory.DataProvider.dll
+C:\Users\shashank\source\repos\EShop\EShop.Inventory.Api\bin\Debug\netcoreapp3.1\EShop.Inventory.DataProvider.pdb
