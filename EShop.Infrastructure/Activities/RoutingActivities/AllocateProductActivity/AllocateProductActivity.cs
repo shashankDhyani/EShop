@@ -20,7 +20,7 @@ namespace EShop.Infrastructure.Activities.RoutingActivities.AllocateProductActiv
             try
             {
             var endpoint = await context.GetSendEndpoint(new Uri("rabbitmq://localhost/allocate_product"));
-            var order = JsonConvert.DeserializeObject<AllocateProduct>(context.Message.Variables["PlaceOrder"].ToString());
+            var order = JsonConvert.DeserializeObject<AllocateProduct>(context.Message.Variables["PlacedOrder"].ToString());
 
             await endpoint.Send(order);
 
