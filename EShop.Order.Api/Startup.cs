@@ -1,4 +1,5 @@
 using Eshop.Product.DataProvider.Repository;
+using EShop.Infrastructure.Activities.RoutingActivities;
 using EShop.Infrastructure.EventBus;
 using EShop.Infrastructure.Mongo;
 using EShop.Order.Api.Handlers;
@@ -44,7 +45,9 @@ namespace EShop.Order.Api
             Configuration.GetSection("rabbitmq").Bind(rabbitmqOption);
 
             services.AddMassTransit(x => {
-                x.AddConsumer<CreateOrderHandler>();
+                x.AddConsumersFromNamespaceContaining<CreateOrderHandler>();
+                x.AddActivitiesFromNamespaceContaining<RoutingActivities>();
+                x.SetKebabCaseEndpointNameFormatter();
                 x.AddBus(provider => Bus.Factory.CreateUsingRabbitMq(cfg =>
                 {
                     cfg.Host(new Uri(rabbitmqOption.ConnectionString), hostconfig =>
@@ -53,11 +56,7 @@ namespace EShop.Order.Api
                         hostconfig.Password(rabbitmqOption.Password);
                     });
 
-                    cfg.ReceiveEndpoint("create_order", ep => {
-                        ep.PrefetchCount = 16;
-                        ep.UseMessageRetry(retryConfig => { retryConfig.Interval(2, 100); });
-                        ep.ConfigureConsumer<CreateOrderHandler>(provider);
-                    });
+                    cfg.ConfigureEndpoints(provider);
                 }));
             });
         }

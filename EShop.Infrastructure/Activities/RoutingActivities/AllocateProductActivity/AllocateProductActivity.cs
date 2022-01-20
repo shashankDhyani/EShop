@@ -19,12 +19,12 @@ namespace EShop.Infrastructure.Activities.RoutingActivities.AllocateProductActiv
         {
             try
             {
-            var endpoint = await context.GetSendEndpoint(new Uri("rabbitmq://localhost/allocate_product"));
-            var order = JsonConvert.DeserializeObject<AllocateProduct>(context.Message.Variables["PlacedOrder"].ToString());
+            var endpoint = await context.GetSendEndpoint(new Uri("rabbitmq://localhost/release_product"));
+            var order = JsonConvert.DeserializeObject<ReleaseProduct>(context.Message.Variables["PlacedOrder"].ToString());
 
             await endpoint.Send(order);
 
-            return context.CompletedWithVariables<AllocateProduct>(order, new { });
+            return context.CompletedWithVariables<ReleaseProduct>(order, new { });
             }
             catch (Exception)
             {

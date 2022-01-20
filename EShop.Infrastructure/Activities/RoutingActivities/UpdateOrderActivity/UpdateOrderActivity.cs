@@ -1,4 +1,5 @@
-﻿using MassTransit.Courier;
+﻿using EShop.Infrastructure.Command.Order;
+using MassTransit.Courier;
 using System;
 using System.Threading.Tasks;
 
@@ -15,8 +16,14 @@ namespace EShop.Infrastructure.Activities.RoutingActivities.UpdateOrderActivity
         {
             try
             {
-                var endpoint = await context.GetSendEndpoint(new Uri("rabbitmq://localhost/create_order"));
-                await endpoint.Send(context.Arguments);
+                var endpoint = await context.GetSendEndpoint(new Uri("rabbitmq://localhost/create-order-handler"));
+                var createOrder = new CreateOrder
+                {
+                    Items = context.Arguments.Items,
+                    OrderId = context.Arguments.OrderId,
+                    UserId = context.Arguments.UserId
+                };
+                await endpoint.Send(createOrder);
 
                 return context.CompletedWithVariables<UpdateOrderLog>(new
                 {

@@ -26,6 +26,7 @@ namespace EShop.Infrastructure.EventBus
                 }));
                 x.AddRequestClient<GetProductById>();
                 x.AddRequestClient<LoginUser>();
+                x.AddRequestClient<Order.Order>();
             });
 
             services.AddMassTransitHostedService();

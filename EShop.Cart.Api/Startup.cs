@@ -81,6 +81,9 @@ namespace EShop.Cart.Api
             {
                 endpoints.MapControllers();
             });
+
+            var busControl = app.ApplicationServices.GetService<IBusControl>();
+            busControl.Start();
         }
     }
 }
