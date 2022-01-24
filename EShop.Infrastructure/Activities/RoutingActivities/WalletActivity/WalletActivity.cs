@@ -9,9 +9,21 @@ namespace EShop.Infrastructure.Activities.RoutingActivities.WalletActivity
 {
     public class WalletActivity : IActivity<TransactMoney, TransactMoneyLog>
     {
-        public Task<CompensationResult> Compensate(CompensateContext<TransactMoneyLog> context)
+        public async Task<CompensationResult> Compensate(CompensateContext<TransactMoneyLog> context)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var addFunds = new AddFunds
+                { UserId = context.Log.UserId, CreditAmount = context.Log.Amount };
+                var endpoint = await context.GetSendEndpoint(new Uri("rabbitmq://localhost/add_funds"));
+                await endpoint.Send(addFunds);
+
+                return context.Compensated();
+            }
+            catch (Exception)
+            {
+                return context.Failed();
+            }
         }
 
         public async Task<ExecutionResult> Execute(ExecuteContext<TransactMoney> context)

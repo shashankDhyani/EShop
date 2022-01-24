@@ -10,9 +10,20 @@ namespace EShop.Infrastructure.Activities.RoutingActivities.AllocateProductActiv
 {
     public class AllocateProductActivity : IActivity<AllocateProduct, OrderLog>
     {
-        public Task<CompensationResult> Compensate(CompensateContext<OrderLog> context)
+        public async Task<CompensationResult> Compensate(CompensateContext<OrderLog> context)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var endpoint = await context.GetSendEndpoint(new Uri("rabbitmq://localhost/allocate_product"));
+                var allocateProduct = JsonConvert.DeserializeObject<AllocateProduct>(context.Message.Variables["PlacedOrder"].ToString());
+                await endpoint.Send(allocateProduct);
+
+                return context.Compensated();
+            }
+            catch (Exception)
+            {
+                return context.Failed();
+            }
         }
 
         public async Task<ExecutionResult> Execute(ExecuteContext<AllocateProduct> context)
