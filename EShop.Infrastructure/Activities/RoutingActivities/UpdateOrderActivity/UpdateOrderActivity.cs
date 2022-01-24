@@ -23,6 +23,11 @@ namespace EShop.Infrastructure.Activities.RoutingActivities.UpdateOrderActivity
                     OrderId = context.Arguments.OrderId,
                     UserId = context.Arguments.UserId
                 };
+
+
+                await Task.Delay(TimeSpan.FromSeconds(30));
+                throw new Exception("Service Unavailable");
+
                 await endpoint.Send(createOrder);
 
                 return context.CompletedWithVariables<UpdateOrderLog>(new
