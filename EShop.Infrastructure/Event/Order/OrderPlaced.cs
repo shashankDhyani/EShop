@@ -8,5 +8,6 @@ namespace EShop.Infrastructure.Event.Order
     {
         public string OrderId { get; set; }
         public string RequestId { get; set; }
+        public string Message { get; set; }
     }
 }

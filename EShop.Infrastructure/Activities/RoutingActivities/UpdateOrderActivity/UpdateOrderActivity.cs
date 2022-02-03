@@ -25,7 +25,6 @@ namespace EShop.Infrastructure.Activities.RoutingActivities.UpdateOrderActivity
                 };
 
 
-                await Task.Delay(TimeSpan.FromSeconds(30));
                 throw new Exception("Service Unavailable");
 
                 await endpoint.Send(createOrder);
