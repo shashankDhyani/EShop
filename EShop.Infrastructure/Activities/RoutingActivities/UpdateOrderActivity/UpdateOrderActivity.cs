@@ -24,9 +24,6 @@ namespace EShop.Infrastructure.Activities.RoutingActivities.UpdateOrderActivity
                     UserId = context.Arguments.UserId
                 };
 
-
-                throw new Exception("Service Unavailable");
-
                 await endpoint.Send(createOrder);
 
                 return context.CompletedWithVariables<UpdateOrderLog>(new

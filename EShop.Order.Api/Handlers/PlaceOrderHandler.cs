@@ -6,6 +6,12 @@ using System.Threading.Tasks;
 
 namespace EShop.Order.Api.Handlers
 {
+    using EShop.Infrastructure.Activities.RoutingActivities.AllocateProductActivity;
+    using EShop.Infrastructure.Activities.RoutingActivities.UpdateCartActivity;
+    using EShop.Infrastructure.Activities.RoutingActivities.UpdateOrderActivity;
+    using EShop.Infrastructure.Activities.RoutingActivities.WalletActivity;
+    using EShop.Infrastructure.Cart;
+    using EShop.Infrastructure.Command.Inventory;
     using EShop.Infrastructure.Event.Order;
     using EShop.Infrastructure.Order;
     using MassTransit.Courier;
@@ -15,6 +21,11 @@ namespace EShop.Order.Api.Handlers
         IConsumer<RoutingSlipCompleted>,
         IConsumer<RoutingSlipFaulted>
     {
+        private IEndpointNameFormatter _endpointNameFormatter;
+        public PlaceOrderHandler(IEndpointNameFormatter endpointNameFormatter)
+        {
+            _endpointNameFormatter = endpointNameFormatter;
+        }
         public async Task Consume(ConsumeContext<Order> context)
         {
             try
@@ -89,17 +100,21 @@ namespace EShop.Order.Api.Handlers
             routingSlipBuilder.AddVariable("PlacedOrder", order);
 
             // Wallet Activity 
-            routingSlipBuilder.AddActivity("PROCESS_WALLET", new Uri("queue:wallet_execute"), 
+            string walletActivityQueueName = _endpointNameFormatter.ExecuteActivity<WalletActivity, TransactMoney>();
+            routingSlipBuilder.AddActivity("PROCESS_WALLET", new Uri($"queue:{walletActivityQueueName}"), 
                     new { order.UserId, order.Amount });
 
             // Allocate Product Activity
-            routingSlipBuilder.AddActivity("ALLOCATE_PRODUCT", new Uri("queue:allocate-product_execute"), new { });
+            string allocateProductActivityQueueName = _endpointNameFormatter.ExecuteActivity<AllocateProductActivity, AllocateProduct>();
+            routingSlipBuilder.AddActivity("ALLOCATE_PRODUCT", new Uri($"queue:{allocateProductActivityQueueName}"), new { });
 
             // update order details
-            routingSlipBuilder.AddActivity("UPDATE_ORDER", new Uri("queue:update-order_execute"), order);
+            string updateOrderActivityQueueName = _endpointNameFormatter.ExecuteActivity<UpdateOrderActivity, Order>();
+            routingSlipBuilder.AddActivity("UPDATE_ORDER", new Uri($"queue:{updateOrderActivityQueueName}"), order);
 
             // update cart 
-            routingSlipBuilder.AddActivity("UPDATE_CART", new Uri("queue:update-cart_execute"), 
+            string updateCartActivityQueueName = _endpointNameFormatter.ExecuteActivity<UpdateCartActivity, Cart>();
+            routingSlipBuilder.AddActivity("UPDATE_CART", new Uri($"queue:{updateCartActivityQueueName}"), 
                 new
                 {
                    order.UserId
