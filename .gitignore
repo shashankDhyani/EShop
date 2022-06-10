@@ -4,5 +4,5 @@
 *.cache
 *.exe
 *.suo
-bin/
-obj/
+bin
+obj
