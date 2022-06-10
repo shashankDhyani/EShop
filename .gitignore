@@ -9,3 +9,6 @@ EShop.Wallet.DataProvider/obj/Debug/netcoreapp3.1/EShop.Wallet.DataProvider.asse
 EShop.Wallet.Api/obj/Debug/netcoreapp3.1/EShop.Wallet.Api.assets.cache
 EShop.Apigateway.Test/obj/Debug/netcoreapp3.1/EShop.Apigateway.Test.assets.cache
 *.exe
+*.suo
+bin
+obj
