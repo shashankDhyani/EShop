@@ -1,11 +1,6 @@
-
-.vs/EShop/DesignTimeBuild/.dtbcache.v2
-.vs/EShop/DesignTimeBuild/.dtbcache.v2
-.vs/EShop/v16/.suo
-EShop.Apigateway.Test/bin/Debug/netcoreapp3.1/Automatonymous.dll
 *.dll
 *.pdb
 *.dll
 *.cache
 *.exe
-.vs/EShop/v16/.suo
+*.suo
