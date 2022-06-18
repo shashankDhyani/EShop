@@ -1,6 +1,7 @@
 ﻿using Eshop.Product.DataProvider.Repository;
 using EShop.Infrastructure.Command.Product;
 using EShop.Infrastructure.Event.Product;
+using System;
 using System.Threading.Tasks;
 
 namespace Eshop.Product.DataProvider.Service
@@ -23,6 +24,16 @@ namespace Eshop.Product.DataProvider.Service
         {
             var product = await _repository.GetProduct(ProductId);
             return product;
+        }
+
+        public async Task<bool> IsNewMessage(Guid? MessageId)
+        {
+            return await _repository.IsNewMessage(MessageId);
+        }
+
+        public async Task AddMessage(string ConsumerName, Guid? MessageId)
+        {
+            await _repository.AddMessage(ConsumerName, MessageId);
         }
     }
 }
