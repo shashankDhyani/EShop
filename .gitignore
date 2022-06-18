@@ -12,3 +12,5 @@ EShop.Apigateway.Test/obj/Debug/netcoreapp3.1/EShop.Apigateway.Test.assets.cache
 *.suo
 bin
 obj
+*.dll
+*.cache
