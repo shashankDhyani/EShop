@@ -21,6 +21,11 @@ namespace EShop.ApiGateway
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                }).ConfigureAppConfiguration((hostingCtx, config) => {
+                    config.SetBasePath(hostingCtx.HostingEnvironment.ContentRootPath)
+                    .AddJsonFile("appsettings.json", false)
+                    .AddJsonFile("Ocelot.config.json",false, reloadOnChange: true)
+                    .AddEnvironmentVariables();
                 });
     }
 }

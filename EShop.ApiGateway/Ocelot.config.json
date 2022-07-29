@@ -1,0 +1,29 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/user?username={uname}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "13322"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/user/{uname}",
+      "UpstreamHttpmethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/product/getproduct?productid={pid}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [{
+          "Host": "localhost",
+          "Port": "9559"
+        }],
+      "UpstreamPathTemplate": "/api/product/{pid}",
+      "UpstreamHttpmethod": [ "Get" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:6355"
+  }
+}
