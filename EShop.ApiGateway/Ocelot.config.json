@@ -10,17 +10,42 @@
         }
       ],
       "UpstreamPathTemplate": "/api/user/{uname}",
-      "UpstreamHttpmethod": [ "Get" ]
+      "UpstreamHttpmethod": [ "Get" ],
+      "Key": "basicDetails"
+    },
+    {
+      "DownstreamPathTemplate": "/api/order/GetAllOrders?userid={uname}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "6420"
+        }
+      ],
+      "UpstreamPathTemplate": "/api/order/{uname}",
+      "UpstreamHttpmethod": [ "Get" ],
+      "Key": "userOrders"
     },
     {
       "DownstreamPathTemplate": "/api/product/getproduct?productid={pid}",
       "DownstreamScheme": "http",
-      "DownstreamHostAndPorts": [{
+      "DownstreamHostAndPorts": [
+        {
           "Host": "localhost",
           "Port": "9559"
-        }],
+        }
+      ],
       "UpstreamPathTemplate": "/api/product/{pid}",
       "UpstreamHttpmethod": [ "Get" ]
+    }
+  ],
+  "Aggregates": [
+    {
+      "RouteKeys": [
+        "basicDetails",
+        "userOrders"
+      ],
+      "UpstreamPathTemplate": "/api/order-history/{uname}"
     }
   ],
   "GlobalConfiguration": {
