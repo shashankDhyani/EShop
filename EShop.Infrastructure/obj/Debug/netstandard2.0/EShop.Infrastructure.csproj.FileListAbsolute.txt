@@ -5,5 +5,6 @@ C:\Users\shashank\source\repos\EShop\EShop.Infrastructure\obj\Debug\netstandard2
 C:\Users\shashank\source\repos\EShop\EShop.Infrastructure\obj\Debug\netstandard2.0\EShop.Infrastructure.AssemblyInfo.cs
 C:\Users\shashank\source\repos\EShop\EShop.Infrastructure\obj\Debug\netstandard2.0\EShop.Infrastructure.dll
 C:\Users\shashank\source\repos\EShop\EShop.Infrastructure\obj\Debug\netstandard2.0\EShop.Infrastructure.pdb
-C:\Users\shashank\source\repos\EShop\EShop.Infrastructure\obj\Debug\netstandard2.0\EShop.Infrastructure.csprojAssemblyReference.cache
 C:\Users\shashank\source\repos\EShop\EShop.Infrastructure\obj\Debug\netstandard2.0\EShop.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\shashank\source\repos\EShop\EShop.Infrastructure\obj\Debug\netstandard2.0\EShop.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\shashank\source\repos\EShop\EShop.Infrastructure\obj\Debug\netstandard2.0\EShop.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig

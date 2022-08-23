@@ -3,10 +3,11 @@ C:\Users\shashank\source\repos\EShop\EShop.Product.DataProvider\bin\Debug\netsta
 C:\Users\shashank\source\repos\EShop\EShop.Product.DataProvider\bin\Debug\netstandard2.0\EShop.Product.DataProvider.pdb
 C:\Users\shashank\source\repos\EShop\EShop.Product.DataProvider\bin\Debug\netstandard2.0\EShop.Infrastructure.dll
 C:\Users\shashank\source\repos\EShop\EShop.Product.DataProvider\bin\Debug\netstandard2.0\EShop.Infrastructure.pdb
-C:\Users\shashank\source\repos\EShop\EShop.Product.DataProvider\obj\Debug\netstandard2.0\EShop.Product.DataProvider.csprojAssemblyReference.cache
 C:\Users\shashank\source\repos\EShop\EShop.Product.DataProvider\obj\Debug\netstandard2.0\EShop.Product.DataProvider.AssemblyInfoInputs.cache
 C:\Users\shashank\source\repos\EShop\EShop.Product.DataProvider\obj\Debug\netstandard2.0\EShop.Product.DataProvider.AssemblyInfo.cs
 C:\Users\shashank\source\repos\EShop\EShop.Product.DataProvider\obj\Debug\netstandard2.0\EShop.Product.DataProvider.csproj.CopyComplete
 C:\Users\shashank\source\repos\EShop\EShop.Product.DataProvider\obj\Debug\netstandard2.0\EShop.Product.DataProvider.dll
 C:\Users\shashank\source\repos\EShop\EShop.Product.DataProvider\obj\Debug\netstandard2.0\EShop.Product.DataProvider.pdb
 C:\Users\shashank\source\repos\EShop\EShop.Product.DataProvider\obj\Debug\netstandard2.0\EShop.Product.DataProvider.csproj.CoreCompileInputs.cache
+C:\Users\shashank\source\repos\EShop\EShop.Product.DataProvider\obj\Debug\netstandard2.0\EShop.Product.DataProvider.csproj.AssemblyReference.cache
+C:\Users\shashank\source\repos\EShop\EShop.Product.DataProvider\obj\Debug\netstandard2.0\EShop.Product.DataProvider.GeneratedMSBuildEditorConfig.editorconfig

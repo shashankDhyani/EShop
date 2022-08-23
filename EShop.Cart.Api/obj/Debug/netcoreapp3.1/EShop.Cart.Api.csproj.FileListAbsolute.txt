@@ -1,6 +1,5 @@
 C:\Users\shashank\source\repos\EShop\EShop.Cart.Api\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\shashank\source\repos\EShop\EShop.Cart.Api\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\shashank\source\repos\EShop\EShop.Cart.Api\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\shashank\source\repos\EShop\EShop.Cart.Api\bin\Debug\netcoreapp3.1\EShop.Cart.Api.exe
 C:\Users\shashank\source\repos\EShop\EShop.Cart.Api\bin\Debug\netcoreapp3.1\EShop.Cart.Api.deps.json
 C:\Users\shashank\source\repos\EShop\EShop.Cart.Api\bin\Debug\netcoreapp3.1\EShop.Cart.Api.runtimeconfig.json
@@ -41,7 +40,6 @@ C:\Users\shashank\source\repos\EShop\EShop.Cart.Api\bin\Debug\netcoreapp3.1\ESho
 C:\Users\shashank\source\repos\EShop\EShop.Cart.Api\bin\Debug\netcoreapp3.1\EShop.Infrastructure.dll
 C:\Users\shashank\source\repos\EShop\EShop.Cart.Api\bin\Debug\netcoreapp3.1\EShop.Cart.DataProvider.pdb
 C:\Users\shashank\source\repos\EShop\EShop.Cart.Api\bin\Debug\netcoreapp3.1\EShop.Infrastructure.pdb
-C:\Users\shashank\source\repos\EShop\EShop.Cart.Api\obj\Debug\netcoreapp3.1\EShop.Cart.Api.csprojAssemblyReference.cache
 C:\Users\shashank\source\repos\EShop\EShop.Cart.Api\obj\Debug\netcoreapp3.1\EShop.Cart.Api.AssemblyInfoInputs.cache
 C:\Users\shashank\source\repos\EShop\EShop.Cart.Api\obj\Debug\netcoreapp3.1\EShop.Cart.Api.AssemblyInfo.cs
 C:\Users\shashank\source\repos\EShop\EShop.Cart.Api\obj\Debug\netcoreapp3.1\EShop.Cart.Api.RazorTargetAssemblyInfo.cache
@@ -79,3 +77,6 @@ C:\Users\shashank\source\repos\EShop\EShop.Cart.Api\bin\Debug\netcoreapp3.1\Micr
 C:\Users\shashank\source\repos\EShop\EShop.Cart.Api\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\shashank\source\repos\EShop\EShop.Cart.Api\obj\Debug\netcoreapp3.1\EShop.Cart.Api.csproj.CoreCompileInputs.cache
 C:\Users\shashank\source\repos\EShop\EShop.Cart.Api\obj\Debug\netcoreapp3.1\EShop.Cart.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\shashank\source\repos\EShop\EShop.Cart.Api\obj\Debug\netcoreapp3.1\EShop.Cart.Api.csproj.AssemblyReference.cache
+C:\Users\shashank\source\repos\EShop\EShop.Cart.Api\obj\Debug\netcoreapp3.1\EShop.Cart.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shashank\source\repos\EShop\EShop.Cart.Api\obj\Debug\netcoreapp3.1\scopedcss\bundle\EShop.Cart.Api.styles.css

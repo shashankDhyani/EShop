@@ -1,6 +1,5 @@
 C:\Users\shashank\source\repos\EShop\EShop.Inventory.Api\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\shashank\source\repos\EShop\EShop.Inventory.Api\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\shashank\source\repos\EShop\EShop.Inventory.Api\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\shashank\source\repos\EShop\EShop.Inventory.Api\bin\Debug\netcoreapp3.1\EShop.Inventory.Api.exe
 C:\Users\shashank\source\repos\EShop\EShop.Inventory.Api\bin\Debug\netcoreapp3.1\EShop.Inventory.Api.deps.json
 C:\Users\shashank\source\repos\EShop\EShop.Inventory.Api\bin\Debug\netcoreapp3.1\EShop.Inventory.Api.runtimeconfig.json
@@ -62,7 +61,6 @@ C:\Users\shashank\source\repos\EShop\EShop.Inventory.Api\bin\Debug\netcoreapp3.1
 C:\Users\shashank\source\repos\EShop\EShop.Inventory.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\shashank\source\repos\EShop\EShop.Inventory.Api\bin\Debug\netcoreapp3.1\EShop.Infrastructure.dll
 C:\Users\shashank\source\repos\EShop\EShop.Inventory.Api\bin\Debug\netcoreapp3.1\EShop.Infrastructure.pdb
-C:\Users\shashank\source\repos\EShop\EShop.Inventory.Api\obj\Debug\netcoreapp3.1\EShop.Inventory.Api.csprojAssemblyReference.cache
 C:\Users\shashank\source\repos\EShop\EShop.Inventory.Api\obj\Debug\netcoreapp3.1\EShop.Inventory.Api.AssemblyInfoInputs.cache
 C:\Users\shashank\source\repos\EShop\EShop.Inventory.Api\obj\Debug\netcoreapp3.1\EShop.Inventory.Api.AssemblyInfo.cs
 C:\Users\shashank\source\repos\EShop\EShop.Inventory.Api\obj\Debug\netcoreapp3.1\EShop.Inventory.Api.csproj.CoreCompileInputs.cache
@@ -76,3 +74,6 @@ C:\Users\shashank\source\repos\EShop\EShop.Inventory.Api\obj\Debug\netcoreapp3.1
 C:\Users\shashank\source\repos\EShop\EShop.Inventory.Api\obj\Debug\netcoreapp3.1\EShop.Inventory.Api.genruntimeconfig.cache
 C:\Users\shashank\source\repos\EShop\EShop.Inventory.Api\bin\Debug\netcoreapp3.1\EShop.Inventory.DataProvider.dll
 C:\Users\shashank\source\repos\EShop\EShop.Inventory.Api\bin\Debug\netcoreapp3.1\EShop.Inventory.DataProvider.pdb
+C:\Users\shashank\source\repos\EShop\EShop.Inventory.Api\obj\Debug\netcoreapp3.1\EShop.Inventory.Api.csproj.AssemblyReference.cache
+C:\Users\shashank\source\repos\EShop\EShop.Inventory.Api\obj\Debug\netcoreapp3.1\EShop.Inventory.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shashank\source\repos\EShop\EShop.Inventory.Api\obj\Debug\netcoreapp3.1\scopedcss\bundle\EShop.Inventory.Api.styles.css

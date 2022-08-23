@@ -1,6 +1,5 @@
 C:\Users\shashank\source\repos\EShop\EShop.ApiGateway\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\shashank\source\repos\EShop\EShop.ApiGateway\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\shashank\source\repos\EShop\EShop.ApiGateway\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\shashank\source\repos\EShop\EShop.ApiGateway\bin\Debug\netcoreapp3.1\EShop.ApiGateway.exe
 C:\Users\shashank\source\repos\EShop\EShop.ApiGateway\bin\Debug\netcoreapp3.1\EShop.ApiGateway.deps.json
 C:\Users\shashank\source\repos\EShop\EShop.ApiGateway\bin\Debug\netcoreapp3.1\EShop.ApiGateway.runtimeconfig.json
@@ -110,7 +109,6 @@ C:\Users\shashank\source\repos\EShop\EShop.ApiGateway\bin\Debug\netcoreapp3.1\zh
 C:\Users\shashank\source\repos\EShop\EShop.ApiGateway\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\shashank\source\repos\EShop\EShop.ApiGateway\bin\Debug\netcoreapp3.1\EShop.Infrastructure.dll
 C:\Users\shashank\source\repos\EShop\EShop.ApiGateway\bin\Debug\netcoreapp3.1\EShop.Infrastructure.pdb
-C:\Users\shashank\source\repos\EShop\EShop.ApiGateway\obj\Debug\netcoreapp3.1\EShop.ApiGateway.csprojAssemblyReference.cache
 C:\Users\shashank\source\repos\EShop\EShop.ApiGateway\obj\Debug\netcoreapp3.1\EShop.ApiGateway.AssemblyInfoInputs.cache
 C:\Users\shashank\source\repos\EShop\EShop.ApiGateway\obj\Debug\netcoreapp3.1\EShop.ApiGateway.AssemblyInfo.cs
 C:\Users\shashank\source\repos\EShop\EShop.ApiGateway\obj\Debug\netcoreapp3.1\EShop.ApiGateway.RazorTargetAssemblyInfo.cache
@@ -147,3 +145,18 @@ C:\Users\shashank\source\repos\EShop\EShop.ApiGateway\bin\Debug\netcoreapp3.1\ru
 C:\Users\shashank\source\repos\EShop\EShop.ApiGateway\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\Users\shashank\source\repos\EShop\EShop.ApiGateway\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\Users\shashank\source\repos\EShop\EShop.ApiGateway\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\shashank\source\repos\EShop\EShop.ApiGateway\bin\Debug\netcoreapp3.1\Ocelot.config.json
+C:\Users\shashank\source\repos\EShop\EShop.ApiGateway\bin\Debug\netcoreapp3.1\CacheManager.Core.dll
+C:\Users\shashank\source\repos\EShop\EShop.ApiGateway\bin\Debug\netcoreapp3.1\CacheManager.Microsoft.Extensions.Configuration.dll
+C:\Users\shashank\source\repos\EShop\EShop.ApiGateway\bin\Debug\netcoreapp3.1\CacheManager.Microsoft.Extensions.Logging.dll
+C:\Users\shashank\source\repos\EShop\EShop.ApiGateway\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Users\shashank\source\repos\EShop\EShop.ApiGateway\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\shashank\source\repos\EShop\EShop.ApiGateway\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.MiddlewareAnalysis.dll
+C:\Users\shashank\source\repos\EShop\EShop.ApiGateway\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\shashank\source\repos\EShop\EShop.ApiGateway\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DiagnosticAdapter.dll
+C:\Users\shashank\source\repos\EShop\EShop.ApiGateway\bin\Debug\netcoreapp3.1\Ocelot.dll
+C:\Users\shashank\source\repos\EShop\EShop.ApiGateway\bin\Debug\netcoreapp3.1\Ocelot.Cache.CacheManager.dll
+C:\Users\shashank\source\repos\EShop\EShop.ApiGateway\obj\Debug\netcoreapp3.1\EShop.ApiGateway.csproj.AssemblyReference.cache
+C:\Users\shashank\source\repos\EShop\EShop.ApiGateway\obj\Debug\netcoreapp3.1\EShop.ApiGateway.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shashank\source\repos\EShop\EShop.ApiGateway\obj\Debug\netcoreapp3.1\EShop.ApiGateway.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\shashank\source\repos\EShop\EShop.ApiGateway\obj\Debug\netcoreapp3.1\scopedcss\bundle\EShop.ApiGateway.styles.css

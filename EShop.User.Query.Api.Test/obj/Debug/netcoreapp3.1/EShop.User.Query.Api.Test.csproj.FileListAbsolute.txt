@@ -87,14 +87,12 @@ C:\Users\shashank\source\repos\EShop\EShop.User.Query.Api.Test\bin\Debug\netcore
 C:\Users\shashank\source\repos\EShop\EShop.User.Query.Api.Test\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 C:\Users\shashank\source\repos\EShop\EShop.User.Query.Api.Test\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\Users\shashank\source\repos\EShop\EShop.User.Query.Api.Test\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-C:\Users\shashank\source\repos\EShop\EShop.User.Query.Api.Test\obj\Debug\netcoreapp3.1\EShop.User.Query.Api.Test.csprojAssemblyReference.cache
 C:\Users\shashank\source\repos\EShop\EShop.User.Query.Api.Test\obj\Debug\netcoreapp3.1\EShop.User.Query.Api.Test.AssemblyInfoInputs.cache
 C:\Users\shashank\source\repos\EShop\EShop.User.Query.Api.Test\obj\Debug\netcoreapp3.1\EShop.User.Query.Api.Test.AssemblyInfo.cs
 C:\Users\shashank\source\repos\EShop\EShop.User.Query.Api.Test\obj\Debug\netcoreapp3.1\EShop.User.Query.Api.Test.csproj.CopyComplete
 C:\Users\shashank\source\repos\EShop\EShop.User.Query.Api.Test\obj\Debug\netcoreapp3.1\EShop.User.Query.Api.Test.genruntimeconfig.cache
 C:\Users\shashank\source\repos\EShop\EShop.User.Query.Api.Test\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\shashank\source\repos\EShop\EShop.User.Query.Api.Test\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\shashank\source\repos\EShop\EShop.User.Query.Api.Test\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\shashank\source\repos\EShop\EShop.User.Query.Api.Test\bin\Debug\netcoreapp3.1\EShop.User.Query.Api.exe
 C:\Users\shashank\source\repos\EShop\EShop.User.Query.Api.Test\bin\Debug\netcoreapp3.1\Automatonymous.dll
 C:\Users\shashank\source\repos\EShop\EShop.User.Query.Api.Test\bin\Debug\netcoreapp3.1\Castle.Core.dll
@@ -160,3 +158,8 @@ C:\Users\shashank\source\repos\EShop\EShop.User.Query.Api.Test\bin\Debug\netcore
 C:\Users\shashank\source\repos\EShop\EShop.User.Query.Api.Test\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\Users\shashank\source\repos\EShop\EShop.User.Query.Api.Test\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\Users\shashank\source\repos\EShop\EShop.User.Query.Api.Test\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\shashank\source\repos\EShop\EShop.User.Query.Api.Test\bin\Debug\netcoreapp3.1\EShop.User.Query.Api.deps.json
+C:\Users\shashank\source\repos\EShop\EShop.User.Query.Api.Test\bin\Debug\netcoreapp3.1\EShop.User.Query.Api.runtimeconfig.json
+C:\Users\shashank\source\repos\EShop\EShop.User.Query.Api.Test\bin\Debug\netcoreapp3.1\EShop.User.Query.Api.runtimeconfig.dev.json
+C:\Users\shashank\source\repos\EShop\EShop.User.Query.Api.Test\obj\Debug\netcoreapp3.1\EShop.User.Query.Api.Test.csproj.AssemblyReference.cache
+C:\Users\shashank\source\repos\EShop\EShop.User.Query.Api.Test\obj\Debug\netcoreapp3.1\EShop.User.Query.Api.Test.GeneratedMSBuildEditorConfig.editorconfig

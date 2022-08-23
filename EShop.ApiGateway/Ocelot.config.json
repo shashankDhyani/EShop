@@ -11,7 +11,8 @@
       ],
       "UpstreamPathTemplate": "/api/user/{uname}",
       "UpstreamHttpmethod": [ "Get" ],
-      "Key": "basicDetails"
+      "Key": "basicDetails",
+      "FileCacheOptions": { "TtlSeconds": 30 }
     },
     {
       "DownstreamPathTemplate": "/api/order/GetAllOrders?userid={uname}",
@@ -24,7 +25,8 @@
       ],
       "UpstreamPathTemplate": "/api/order/{uname}",
       "UpstreamHttpmethod": [ "Get" ],
-      "Key": "userOrders"
+      "Key": "userOrders",
+      "FileCacheOptions": { "TtlSeconds": 40 }
     },
     {
       "DownstreamPathTemplate": "/api/product/getproduct?productid={pid}",
@@ -45,7 +47,7 @@
         "basicDetails",
         "userOrders"
       ],
-      "UpstreamPathTemplate": "/api/order-history/{uname}"
+      "UpstreamPathTemplate": "/api/order-history/{uname}",
     }
   ],
   "GlobalConfiguration": {

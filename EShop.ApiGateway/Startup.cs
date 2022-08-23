@@ -8,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
+using Ocelot.Cache.CacheManager;
 
 namespace EShop.ApiGateway
 {
@@ -26,7 +27,7 @@ namespace EShop.ApiGateway
             services.AddControllers();
             services.AddRabbitMq(Configuration);
             services.AddJwt(Configuration);
-            services.AddOcelot(Configuration);
+            services.AddOcelot(Configuration).AddCacheManager(settings => settings.WithDictionaryHandle());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

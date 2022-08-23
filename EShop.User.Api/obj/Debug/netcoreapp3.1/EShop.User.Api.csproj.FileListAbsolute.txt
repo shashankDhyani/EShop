@@ -1,6 +1,5 @@
 C:\Users\shashank\source\repos\EShop\EShop.User.Api\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\shashank\source\repos\EShop\EShop.User.Api\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\shashank\source\repos\EShop\EShop.User.Api\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\shashank\source\repos\EShop\EShop.User.Api\bin\Debug\netcoreapp3.1\EShop.User.Api.exe
 C:\Users\shashank\source\repos\EShop\EShop.User.Api\bin\Debug\netcoreapp3.1\EShop.User.Api.deps.json
 C:\Users\shashank\source\repos\EShop\EShop.User.Api\bin\Debug\netcoreapp3.1\EShop.User.Api.runtimeconfig.json
@@ -40,7 +39,6 @@ C:\Users\shashank\source\repos\EShop\EShop.User.Api\bin\Debug\netcoreapp3.1\ESho
 C:\Users\shashank\source\repos\EShop\EShop.User.Api\bin\Debug\netcoreapp3.1\EShop.User.DataProvider.dll
 C:\Users\shashank\source\repos\EShop\EShop.User.Api\bin\Debug\netcoreapp3.1\EShop.Infrastructure.pdb
 C:\Users\shashank\source\repos\EShop\EShop.User.Api\bin\Debug\netcoreapp3.1\EShop.User.DataProvider.pdb
-C:\Users\shashank\source\repos\EShop\EShop.User.Api\obj\Debug\netcoreapp3.1\EShop.User.Api.csprojAssemblyReference.cache
 C:\Users\shashank\source\repos\EShop\EShop.User.Api\obj\Debug\netcoreapp3.1\EShop.User.Api.AssemblyInfoInputs.cache
 C:\Users\shashank\source\repos\EShop\EShop.User.Api\obj\Debug\netcoreapp3.1\EShop.User.Api.AssemblyInfo.cs
 C:\Users\shashank\source\repos\EShop\EShop.User.Api\obj\Debug\netcoreapp3.1\EShop.User.Api.RazorTargetAssemblyInfo.cache
@@ -76,3 +74,6 @@ C:\Users\shashank\source\repos\EShop\EShop.User.Api\bin\Debug\netcoreapp3.1\runt
 C:\Users\shashank\source\repos\EShop\EShop.User.Api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\Users\shashank\source\repos\EShop\EShop.User.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\Users\shashank\source\repos\EShop\EShop.User.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\shashank\source\repos\EShop\EShop.User.Api\obj\Debug\netcoreapp3.1\EShop.User.Api.csproj.AssemblyReference.cache
+C:\Users\shashank\source\repos\EShop\EShop.User.Api\obj\Debug\netcoreapp3.1\EShop.User.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shashank\source\repos\EShop\EShop.User.Api\obj\Debug\netcoreapp3.1\scopedcss\bundle\EShop.User.Api.styles.css

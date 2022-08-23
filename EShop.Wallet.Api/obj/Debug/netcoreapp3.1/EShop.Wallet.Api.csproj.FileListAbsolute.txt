@@ -1,6 +1,5 @@
 C:\Users\shashank\source\repos\EShop\EShop.Wallet.Api\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\shashank\source\repos\EShop\EShop.Wallet.Api\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\shashank\source\repos\EShop\EShop.Wallet.Api\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\shashank\source\repos\EShop\EShop.Wallet.Api\bin\Debug\netcoreapp3.1\EShop.Wallet.Api.exe
 C:\Users\shashank\source\repos\EShop\EShop.Wallet.Api\bin\Debug\netcoreapp3.1\Automatonymous.dll
 C:\Users\shashank\source\repos\EShop\EShop.Wallet.Api\bin\Debug\netcoreapp3.1\DnsClient.dll
@@ -57,7 +56,6 @@ C:\Users\shashank\source\repos\EShop\EShop.Wallet.Api\bin\Debug\netcoreapp3.1\ru
 C:\Users\shashank\source\repos\EShop\EShop.Wallet.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\shashank\source\repos\EShop\EShop.Wallet.Api\bin\Debug\netcoreapp3.1\EShop.Infrastructure.dll
 C:\Users\shashank\source\repos\EShop\EShop.Wallet.Api\bin\Debug\netcoreapp3.1\EShop.Infrastructure.pdb
-C:\Users\shashank\source\repos\EShop\EShop.Wallet.Api\obj\Debug\netcoreapp3.1\EShop.Wallet.Api.csprojAssemblyReference.cache
 C:\Users\shashank\source\repos\EShop\EShop.Wallet.Api\obj\Debug\netcoreapp3.1\EShop.Wallet.Api.AssemblyInfoInputs.cache
 C:\Users\shashank\source\repos\EShop\EShop.Wallet.Api\obj\Debug\netcoreapp3.1\EShop.Wallet.Api.AssemblyInfo.cs
 C:\Users\shashank\source\repos\EShop\EShop.Wallet.Api\obj\Debug\netcoreapp3.1\EShop.Wallet.Api.RazorTargetAssemblyInfo.cache
@@ -76,3 +74,6 @@ C:\Users\shashank\source\repos\EShop\EShop.Wallet.Api\obj\Debug\netcoreapp3.1\ES
 C:\Users\shashank\source\repos\EShop\EShop.Wallet.Api\obj\Debug\netcoreapp3.1\EShop.Wallet.Api.genruntimeconfig.cache
 C:\Users\shashank\source\repos\EShop\EShop.Wallet.Api\bin\Debug\netcoreapp3.1\EShop.Wallet.DataProvider.dll
 C:\Users\shashank\source\repos\EShop\EShop.Wallet.Api\bin\Debug\netcoreapp3.1\EShop.Wallet.DataProvider.pdb
+C:\Users\shashank\source\repos\EShop\EShop.Wallet.Api\obj\Debug\netcoreapp3.1\EShop.Wallet.Api.csproj.AssemblyReference.cache
+C:\Users\shashank\source\repos\EShop\EShop.Wallet.Api\obj\Debug\netcoreapp3.1\EShop.Wallet.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shashank\source\repos\EShop\EShop.Wallet.Api\obj\Debug\netcoreapp3.1\scopedcss\bundle\EShop.Wallet.Api.styles.css
