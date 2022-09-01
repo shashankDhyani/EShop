@@ -9,6 +9,8 @@ using Microsoft.Extensions.Hosting;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 using Ocelot.Cache.CacheManager;
+using EShop.ApiGateway.Middleware;
+using EShop.ApiGateway.DTO;
 
 namespace EShop.ApiGateway
 {
@@ -27,6 +29,7 @@ namespace EShop.ApiGateway
             services.AddControllers();
             services.AddRabbitMq(Configuration);
             services.AddJwt(Configuration);
+            services.Configure<AsyncRoutesOption>(Configuration.GetSection("AsyncRoutes"));
             services.AddOcelot(Configuration).AddCacheManager(settings => settings.WithDictionaryHandle());
         }
 
@@ -40,6 +43,7 @@ namespace EShop.ApiGateway
 
             app.UseRouting();
 
+            app.UseOcelotQueueMiddleware();
             app.UseOcelot();
 
             app.UseAuthorization();

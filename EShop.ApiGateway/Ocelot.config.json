@@ -48,6 +48,14 @@
       }
     },
   ],
+  "AsyncRoutes": {
+    "Authenticate": false,
+    "Routes": {
+      "/product/Add": {
+        "Queue": "create_product"
+      }
+    }
+  },
   "Aggregates": [
     {
       "RouteKeys": [
