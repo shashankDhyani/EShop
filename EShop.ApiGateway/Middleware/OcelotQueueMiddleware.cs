@@ -1,4 +1,5 @@
 ﻿using EShop.ApiGateway.DTO;
+using EShop.Infrastructure.Command;
 using EShop.Infrastructure.Command.Product;
 using MassTransit;
 using Microsoft.AspNetCore.Builder;
@@ -10,6 +11,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace EShop.ApiGateway.Middleware
@@ -19,6 +21,9 @@ namespace EShop.ApiGateway.Middleware
     {
         private readonly RequestDelegate _next;
         private readonly IDictionary<string, AsyncRouteOption> _asyncRoutes;
+        
+        private static Assembly _commandsAssembly = Assembly.GetAssembly(typeof(EShopCommands));
+
         public OcelotQueueMiddleware(RequestDelegate next, IOptions<AsyncRoutesOption> asyncRoutesOptions)
         {
             _next = next;
@@ -31,10 +36,7 @@ namespace EShop.ApiGateway.Middleware
             {
                 if (httpContext.Request.Method == HttpMethod.Post.ToString())
                 {
-                    var reader = new StreamReader(httpContext.Request.Body);
-                    var content = await reader.ReadToEndAsync();
-
-                    var payload = JsonConvert.DeserializeObject<CreateProduct>(content);
+                    object payload = await PreparePayload(httpContext);
 
                     await publishEndpoint.Publish(payload);
                     httpContext.Response.StatusCode = 201;
@@ -50,6 +52,18 @@ namespace EShop.ApiGateway.Middleware
                 httpContext.Response.StatusCode = 501;
                 await httpContext.Response.WriteAsync($"Error: {ex.Message}");
             }
+        }
+
+        private async Task<object> PreparePayload(HttpContext httpContext)
+        {
+            var reader = new StreamReader(httpContext.Request.Body);
+            var content = await reader.ReadToEndAsync();
+
+            string type = _asyncRoutes[httpContext.Request.Path].CommandType;
+            var requiredType = _commandsAssembly.ExportedTypes.Where(ty => ty.Name == type).FirstOrDefault();
+
+            var payload = JsonConvert.DeserializeObject(content, requiredType);
+            return payload;
         }
     }
 

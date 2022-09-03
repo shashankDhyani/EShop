@@ -15,5 +15,6 @@ namespace EShop.ApiGateway.DTO
     public class AsyncRouteOption
     {
         public string Queue { get; set; }
+        public string CommandType { get; set; }
     }
 }
