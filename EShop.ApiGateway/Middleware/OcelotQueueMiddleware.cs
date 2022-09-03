@@ -1,9 +1,13 @@
 ﻿using EShop.ApiGateway.DTO;
+using EShop.Infrastructure.Command.Product;
+using MassTransit;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Options;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -21,15 +25,30 @@ namespace EShop.ApiGateway.Middleware
             _asyncRoutes = asyncRoutesOptions.Value.Routes;
         }
 
-        public Task Invoke(HttpContext httpContext)
+        public async Task Invoke(HttpContext httpContext, IPublishEndpoint publishEndpoint)
         {
-            if(httpContext.Request.Method == HttpMethod.Post.ToString())
+            try
             {
-                return httpContext.Response.WriteAsync("Hello from custom middleware.");
+                if (httpContext.Request.Method == HttpMethod.Post.ToString())
+                {
+                    var reader = new StreamReader(httpContext.Request.Body);
+                    var content = await reader.ReadToEndAsync();
+
+                    var payload = JsonConvert.DeserializeObject<CreateProduct>(content);
+
+                    await publishEndpoint.Publish(payload);
+                    httpContext.Response.StatusCode = 201;
+                    await httpContext.Response.WriteAsync("Your request is accepted");
+                }
+                else
+                {
+                    await _next(httpContext);
+                }
             }
-            else
+            catch (Exception ex)
             {
-            return _next(httpContext);
+                httpContext.Response.StatusCode = 501;
+                await httpContext.Response.WriteAsync($"Error: {ex.Message}");
             }
         }
     }
