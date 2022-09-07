@@ -5,7 +5,7 @@ using System.Text;
 namespace EShop.Infrastructure.Command
 {
     //This is a marker interface.
-    public interface EShopCommands
+    public interface IEshopCommand
     {
     }
 }

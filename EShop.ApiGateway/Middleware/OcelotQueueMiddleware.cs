@@ -21,8 +21,7 @@ namespace EShop.ApiGateway.Middleware
     {
         private readonly RequestDelegate _next;
         private readonly IDictionary<string, AsyncRouteOption> _asyncRoutes;
-        
-        private static Assembly _commandsAssembly = Assembly.GetAssembly(typeof(EShopCommands));
+        private static Assembly _commandAssembly = Assembly.GetAssembly(typeof(IEshopCommand));
 
         public OcelotQueueMiddleware(RequestDelegate next, IOptions<AsyncRoutesOption> asyncRoutesOptions)
         {
@@ -60,9 +59,11 @@ namespace EShop.ApiGateway.Middleware
             var content = await reader.ReadToEndAsync();
 
             string type = _asyncRoutes[httpContext.Request.Path].CommandType;
-            var requiredType = _commandsAssembly.ExportedTypes.Where(ty => ty.Name == type).FirstOrDefault();
+
+            var requiredType = _commandAssembly.ExportedTypes.Where(ty => ty.Name == type).FirstOrDefault();
 
             var payload = JsonConvert.DeserializeObject(content, requiredType);
+            
             return payload;
         }
     }
