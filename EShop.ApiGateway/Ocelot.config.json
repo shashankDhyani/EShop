@@ -51,9 +51,12 @@
   "AsyncRoutes": {
     "Authenticate": false,
     "Routes": {
-      "/api/product/Add": {
+      "/api/product/add": {
         "Queue": "create_product",
         "CommandType": "CreateProduct"
+      },
+      "/api/User": {
+        "CommandType": "CreateUser"
       }
     }
   },
