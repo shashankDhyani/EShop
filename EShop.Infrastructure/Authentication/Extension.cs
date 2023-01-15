@@ -1,12 +1,6 @@
-﻿using EShop.Infrastructure.Command.User;
-using EShop.Infrastructure.Event.User;
-using EShop.Infrastructure.Security;
-using MassTransit.Serialization;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
-using System;
-using System.Collections.Generic;
 using System.Text;
 
 namespace EShop.Infrastructure.Authentication
@@ -17,12 +11,15 @@ namespace EShop.Infrastructure.Authentication
         {
             var options = new JwtOptions();
             configuration.GetSection("jwt").Bind(options);
-            collection.Configure<JwtOptions>(x=> x = options);
-            collection.AddSingleton<IAuthenticationHandler,AuthenticationHandler>();
+            collection.Configure<JwtOptions>(x => x = options);
+            collection.AddSingleton<IAuthenticationHandler, AuthenticationHandler>();
+            var authenticationProviderKey = "EShopAuthenticationKey";
+
             collection.AddAuthentication()
-                .AddJwtBearer(cfg =>{
+                .AddJwtBearer(authenticationProviderKey, cfg =>
+                {
                     cfg.RequireHttpsMetadata = false;
-                    cfg.SaveToken = true; 
+                    cfg.SaveToken = true;
                     cfg.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
                     {
                         ValidateAudience = false,
@@ -31,7 +28,7 @@ namespace EShop.Infrastructure.Authentication
                     };
                 });
 
-            return collection;            
+            return collection;
         }
     }
 }

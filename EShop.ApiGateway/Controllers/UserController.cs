@@ -1,6 +1,5 @@
 ﻿using EShop.Infrastructure.Authentication;
 using EShop.Infrastructure.Command.User;
-using EShop.Infrastructure.Event.User;
 using MassTransit;
 using Microsoft.AspNetCore.Mvc;
 using System;

@@ -1,3 +1,5 @@
+using EShop.ApiGateway.DTO;
+using EShop.ApiGateway.Middleware;
 using EShop.Infrastructure.Authentication;
 using EShop.Infrastructure.EventBus;
 using MassTransit;
@@ -6,11 +8,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Ocelot.Cache.CacheManager;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
-using Ocelot.Cache.CacheManager;
-using EShop.ApiGateway.Middleware;
-using EShop.ApiGateway.DTO;
 
 namespace EShop.ApiGateway
 {
@@ -30,6 +30,7 @@ namespace EShop.ApiGateway
             services.AddRabbitMq(Configuration);
             services.AddJwt(Configuration);
             services.Configure<AsyncRoutesOption>(Configuration.GetSection("AsyncRoutes"));
+
             services.AddOcelot(Configuration).AddCacheManager(settings => settings.WithDictionaryHandle());
         }
 

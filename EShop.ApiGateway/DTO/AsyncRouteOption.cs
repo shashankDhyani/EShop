@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace EShop.ApiGateway.DTO
 {
@@ -16,5 +13,6 @@ namespace EShop.ApiGateway.DTO
     {
         public string Queue { get; set; }
         public string CommandType { get; set; }
+        public bool Responds { get; set; }
     }
 }

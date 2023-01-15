@@ -1,6 +1,7 @@
 ﻿using EShop.ApiGateway.DTO;
+using EShop.Infrastructure.Authentication;
 using EShop.Infrastructure.Command;
-using EShop.Infrastructure.Command.Product;
+using EShop.Infrastructure.Command.User;
 using MassTransit;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
@@ -29,7 +30,7 @@ namespace EShop.ApiGateway.Middleware
             _asyncRoutes = asyncRoutesOptions.Value.Routes;
         }
 
-        public async Task Invoke(HttpContext httpContext, IPublishEndpoint publishEndpoint)
+        public async Task Invoke(HttpContext httpContext, IPublishEndpoint publishEndpoint, IRequestClient<LoginUser> request)
         {
             try
             {
@@ -37,9 +38,18 @@ namespace EShop.ApiGateway.Middleware
                 {
                     object payload = await PreparePayload(httpContext);
 
-                    await publishEndpoint.Publish(payload);
-                    httpContext.Response.StatusCode = 201;
-                    await httpContext.Response.WriteAsync("Your request is accepted");
+                    if (_asyncRoutes[httpContext.Request.Path].Responds) //considering only Login user needs response back
+                    {
+                        var token = await request.GetResponse<JwtAuthToken>(payload);
+                        httpContext.Response.StatusCode = 200;
+                        await httpContext.Response.WriteAsync(JsonConvert.SerializeObject(token));
+                    }
+                    else
+                    {
+                        await publishEndpoint.Publish(payload);
+                        httpContext.Response.StatusCode = 201;
+                        await httpContext.Response.WriteAsync("Your request is accepted");
+                    }
                 }
                 else
                 {
@@ -55,6 +65,19 @@ namespace EShop.ApiGateway.Middleware
 
         private async Task<object> PreparePayload(HttpContext httpContext)
         {
+            if (_asyncRoutes[httpContext.Request.Path].Responds)
+            {
+                var formdata = httpContext.Request.Form;
+
+                var user = new LoginUser()
+                {
+                    Username = formdata["Username"],
+                    Password = formdata["Password"]
+                };
+
+                return user;
+            }
+
             var reader = new StreamReader(httpContext.Request.Body);
             var content = await reader.ReadToEndAsync();
 
@@ -63,7 +86,7 @@ namespace EShop.ApiGateway.Middleware
             var requiredType = _commandAssembly.ExportedTypes.Where(ty => ty.Name == type).FirstOrDefault();
 
             var payload = JsonConvert.DeserializeObject(content, requiredType);
-            
+
             return payload;
         }
     }
